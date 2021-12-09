@@ -13,6 +13,7 @@ import java.util.Map;
 /**
  * @author : weipeng
  * @since : 2021-11-16 9:22 上午
+ * 图 转成 xml 格式
  */
 
 public class XmlGraph {
@@ -52,8 +53,8 @@ public class XmlGraph {
                             for (Map.Entry<String, Object> geometryEntry : geometryMap.entrySet()) {
                                 String geometryKey = geometryEntry.getKey();
                                 Object geometryValue = geometryEntry.getValue();
-                                if (geometryKey == null) {
-                                    geometryElement.setAttribute(geometryKey, "");
+                                if (geometryValue == null) {
+//                                    geometryElement.setAttribute(geometryKey, "");
                                 } else if (geometryValue instanceof String) {
                                     geometryElement.setAttribute(geometryKey, geometryValue.toString());
                                 }

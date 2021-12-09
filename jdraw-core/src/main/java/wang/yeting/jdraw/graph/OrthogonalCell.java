@@ -8,6 +8,7 @@ import lombok.experimental.SuperBuilder;
 /**
  * @author : weipeng
  * @since : 2021-11-17 11:51 上午
+ * 连线
  */
 @Getter
 @Setter

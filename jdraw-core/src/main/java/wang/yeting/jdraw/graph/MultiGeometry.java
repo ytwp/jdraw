@@ -8,6 +8,7 @@ import lombok.experimental.SuperBuilder;
 /**
  * @author : weipeng
  * @since : 2021-11-16 4:48 下午
+ * 多样的 图形属性
  */
 @SuperBuilder(toBuilder = true)
 @Getter

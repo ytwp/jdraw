@@ -10,6 +10,7 @@ import java.util.List;
 /**
  * @author : weipeng
  * @since : 2021-11-16 2:42 下午
+ * 图 的画布
  */
 
 @Builder
@@ -56,6 +57,11 @@ public class GraphModel {
 
     public GraphModel addCell(Cell cell) {
         cellList.add(cell);
+        return this;
+    }
+
+    public GraphModel addCell(List<Cell> cell) {
+        cellList.addAll(cell);
         return this;
     }
 

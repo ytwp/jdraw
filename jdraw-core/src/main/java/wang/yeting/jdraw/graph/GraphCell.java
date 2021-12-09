@@ -7,6 +7,7 @@ import lombok.experimental.SuperBuilder;
 /**
  * @author : weipeng
  * @since : 2021-11-16 4:45 下午
+ * 图形抽象
  */
 @SuperBuilder(toBuilder = true)
 @Getter
