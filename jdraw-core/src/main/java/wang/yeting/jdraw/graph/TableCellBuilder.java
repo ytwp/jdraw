@@ -72,8 +72,8 @@ public class TableCellBuilder<T> {
             cellList.add(row);
             int cellX = 0;
             for (int j = 0; j < rowData.size(); j++) {
-                T cellData = rowData.get(i);
-                Integer columnWidth = columnWidthList.get(i);
+                T cellData = rowData.get(j);
+                Integer columnWidth = columnWidthList.get(j);
                 String cellId = IdWorker.getIdStr();
                 rowDataCellId.add(cellId);
                 PartialRectangleCell cell = PartialRectangleCell.builder().id(cellId).parent(rowId).value(cellData.toString()).geometry(
